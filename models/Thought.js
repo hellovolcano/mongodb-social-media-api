@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose')
+const { Schema, model, Types } = require('mongoose')
 
 const ReactionSchema = new Schema({
     reactionId: {
@@ -20,8 +20,6 @@ const ReactionSchema = new Schema({
         default: Date.now,
         // insert getter to make this date purdy
     }
-    // min: 1,
-    // max: 280
 },
 {
     toJSON: {

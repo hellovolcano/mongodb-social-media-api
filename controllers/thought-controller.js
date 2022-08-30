@@ -2,14 +2,17 @@ const { Thought } = require('../models')
 
 const ThoughtController = {
     // get all thoughts
-    getThoughts(req,res) {
+    getAllThoughts(req,res) {
         Thought.find({})
         .then(dbThoughtData => res.json(dbThoughtData))
-        .catch(err => res.json(err))
+        .catch(err => {
+            console.log(err)
+            res.status(400).json(err)
+        })
     },
 
     // get one thought
-    getOneThought({ params },res) {
+    getThoughtById({ params },res) {
         Thought.findOne(
             { _id: params.id}
         )
@@ -30,3 +33,5 @@ const ThoughtController = {
             .catch(err => res.status(400).json(err))
     }
 }
+
+module.exports = ThoughtController
