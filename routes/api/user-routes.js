@@ -9,19 +9,20 @@ const {
     removeUserById
 } = require('../../controllers/user-controller')
 
-// set up GET all and POST at /api/users
+// /api/users
 router
     .route('/')
     .get(getAllUsers)
     .post(createUser)
 
+// /api/users/:id    
 router
     .route('/:id')
     .get(getUserById)
     .put(updateUserById)
     .delete(removeUserById)
 
-// /:userId/friends/:friendId    
+// /api/users/:userId/friends/:friendId    
 router
     .route('/:userId/friends/:friendId')
     .post(addFriend)

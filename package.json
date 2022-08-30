@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hellovolcano/mongodb-social-media-api#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "luxon": "^3.0.3",
     "mongoose": "^6.5.3"
   }
 }
