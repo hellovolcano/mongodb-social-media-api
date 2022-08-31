@@ -2,7 +2,7 @@
 This project leverages MongoDB, Mongoose, and Express JS to implement the backend of a social media network, where users can create accounts, add thoughts, friends, and reactions. 
 
 ## Links
-- [Walkthrough Video](http://www.google.com)
+- [Walkthrough Video](https://drive.google.com/file/d/1lUTTtW-8lDaYzs7ARGb-OzhCkHX6yBbt/view)
 
 ## Technologies Used
 - Node JS
